@@ -25,7 +25,7 @@ export default function PDFExtractorPage() {
             const data = await res.text();
             setText(data.trim());
         } catch (err) {
-            alert("Something went wrong while extracting PDF text.");
+            alert("Something went wrong while extracting PDF text");
         } finally {
             setLoading(false);
         }
